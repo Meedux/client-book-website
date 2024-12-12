@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <!-- Navigation Header -->
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="navbar-logo">
-                    <a href="#">
-                        <img src="img/nav-logo.png" alt="">
-                    </a>
-                </div>
-                <ul class="navbar-links">
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                    <li><a href="#" class="btn">Button</a></li>
-                </ul>
-            </div>
-        </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <img src="img/loading1.svg" alt="loading1">
+        <img src="img/loading2.svg" alt="loading2">
+        <img src="img/loading3.svg" alt="loading3">
+        <img src="img/loading4.svg" alt="loading4">
+        <img src="img/loading5.svg" alt="loading5">
+        <img src="img/loading6.svg" alt="loading6">
+    </div>
 
-        <!-- Hero Section with IMG BG -->
-        <section class="hero">
-            <div class="hero-logo">
-                <img src="img/hero-logo.svg" alt="Hero Logo">
-            </div>
-        </section>
+    <!-- Main Content -->
+    <div id="main-content" style="display: none;">
+        <header class="header">
+            <!-- Navigation Header -->
+            <nav class="navbar">
+                <div class="nav-container">
+                    <div class="navbar-logo">
+                        <a href="#">
+                            <img src="img/nav-logo.png" alt="">
+                        </a>
+                    </div>
+                    <ul class="navbar-links">
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#" class="btn">Button</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Hero Section with IMG BG -->
+            <section class="hero">
+                <div class="hero-logo">
+                    <img src="img/hero-logo.svg" alt="Hero Logo">
+                </div>
+            </section>
+        </header>
 
         <!-- Organization Section -->
         <section class="organization">
@@ -90,7 +104,6 @@
             </div>
         </section>
         
-
         <!-- Personal Brand Book Section -->
 
         <!-- Voice Section -->
@@ -106,5 +119,8 @@
         <!-- Contacts Section -->
 
         <!-- Footer Section -->
-    </body>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>

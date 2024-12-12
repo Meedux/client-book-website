@@ -4,31 +4,24 @@ body, html {
     padding: 0;
     font-family: Arial, sans-serif;
     height: 100%;
-    overflow-x: hidden;
+    overflow: hidden; /* Prevent scrolling while loading */
 }
 
-/* Hero Section */
-.hero {
-    position: relative;
-    background: url('img/header_img.svg') no-repeat center center;
-    background-size: cover;
-    padding: 5rem 2rem;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+
+/* Header Section */
+.header {
+    background: url('img/header_img.svg') no-repeat center center/cover;
+    background-attachment: fixed; /* Ensure the background image stays fixed */
 }
 
 /* Navbar */
 .navbar {
-    position: absolute;
+    position: relative; /* Ensure the navbar scrolls with the page */
     width: 100%;
     top: 0;
     left: 0;
     z-index: 10;
     padding: 1rem 0;
-    background: transparent;
 }
 
 .nav-container {
@@ -85,48 +78,13 @@ body, html {
     color: white;
 }
 
-/* Hero Content */
-.hero-content {
-    text-align: center;
-    margin-top: 20vh; /* Adjust the vertical position of the hero content */
-}
-
-.hero-content img {
-    max-width: 80%; /* Adjust image size */
-    height: auto;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        padding: 4rem 2rem;
-    }
-
-    .nav-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    .hero-content img {
-        max-width: 100%; /* Ensure the logo takes full width on smaller screens */
-    }
-}
-
-
+/* Hero Section */
 .hero {
-    background: url('img/header_img.svg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-    position: relative;
+    align-items: center;
+    flex-direction: column;
 }
 
 .hero-logo img {
@@ -186,7 +144,8 @@ body, html {
     justify-content: center;
     padding: 2rem;
     gap: 2rem;
-    margin-top: 10rem;
+    margin: 10rem auto; /* Center the section horizontally */
+    max-width: 1200px; /* Set a maximum width for the section */
 }
 
 .long-container {
@@ -195,8 +154,8 @@ body, html {
 }
 
 .long-container img {
-    width: 90%;
-    height: 100%; /* Makes the image container stretch */
+    width: 100%; /* Ensure the image takes full width of its container */
+    height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Ensures the image covers the space properly */
 }
 
@@ -227,6 +186,7 @@ body, html {
 @media (max-width: 768px) {
     .long {
         flex-direction: column;
+        max-width: 100%; /* Ensure the section takes full width on smaller screens */
     }
 
     .long-container,
@@ -235,3 +195,70 @@ body, html {
     }
 }
 
+/* Loading Screen */
+#loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    background-color: #f0f0f0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it covers the entire page */
+}
+
+#loading-screen img {
+    width: 300px;
+    height: 300px;
+    opacity: 0; 
+    position: absolute; 
+    transition: all 1s;
+}
+
+@keyframes sequentialFade {
+    0% {
+        opacity: 0;
+    }
+    16.67% {
+        opacity: 1;
+    }
+    33.33% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#loading-screen img:nth-child(1) {
+    animation: sequentialFade 6s infinite;
+    animation-delay: 0s;
+}
+
+#loading-screen img:nth-child(2) {
+    animation: sequentialFade 6s infinite;
+    animation-delay: 0.5s;
+}
+
+#loading-screen img:nth-child(3) {
+    animation: sequentialFade 6s infinite;
+    animation-delay: 1s;
+}
+
+#loading-screen img:nth-child(4) {
+    animation: sequentialFade 6s infinite;
+    animation-delay: 1.5s;
+}
+
+#loading-screen img:nth-child(5) {
+    animation: sequentialFade 6s infinite;
+    animation-delay: 2s;
+}
+
+#loading-screen img:nth-child(6) {
+    animation: sequentialFade 6s infinite;
+    animation-delay: 2.5s;
+}

@@ -1,0 +1,32 @@
+Uri: http://loading.glitchvg.com/index.html
+File Name: C:\Downloaded Web Sites\loading.glitchvg.com\index.html
+Content Type: text/html
+
+Uri: http://loading.glitchvg.com/loading.css
+File Name: C:\Downloaded Web Sites\loading.glitchvg.com\loading.css
+Content Type: text/css
+
+Uri: http://loading.glitchvg.com/svg/loading1.svg
+File Name: C:\Downloaded Web Sites\loading.glitchvg.com\svg\loading1.svg
+Content Type: image/svg+xml
+
+Uri: http://loading.glitchvg.com/svg/loading2.svg
+File Name: C:\Downloaded Web Sites\loading.glitchvg.com\svg\loading2.svg
+Content Type: image/svg+xml
+
+Uri: http://loading.glitchvg.com/svg/loading3.svg
+File Name: C:\Downloaded Web Sites\loading.glitchvg.com\svg\loading3.svg
+Content Type: image/svg+xml
+
+Uri: http://loading.glitchvg.com/svg/loading4.svg
+File Name: C:\Downloaded Web Sites\loading.glitchvg.com\svg\loading4.svg
+Content Type: image/svg+xml
+
+Uri: http://loading.glitchvg.com/svg/loading5.svg
+File Name: C:\Downloaded Web Sites\loading.glitchvg.com\svg\loading5.svg
+Content Type: image/svg+xml
+
+Uri: http://loading.glitchvg.com/svg/loading6.svg
+File Name: C:\Downloaded Web Sites\loading.glitchvg.com\svg\loading6.svg
+Content Type: image/svg+xml
+
