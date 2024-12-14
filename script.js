@@ -7,6 +7,23 @@ window.addEventListener("load", () => {
 
   const { animate, scroll, inView } = Motion;
 
+  inView("#org-text-header", () => {
+    const animation = animate("#org-text",
+      {
+        opacity: [0, 1],
+        y: [50, 0]
+      },
+      {
+        ease: "ease-in",
+        duration: 1,
+      }
+    )
+
+    animation.play()
+
+    return () => animation.complete()
+  })
+
   inView("#top-svg", (progress) => {
     const animation = animate(
       "#top-path",
