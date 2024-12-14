@@ -199,7 +199,6 @@ body, html {
     }
 }
 
-/* Loading Screen */
 #loading-screen {
     display: flex;
     justify-content: center;
@@ -211,7 +210,7 @@ body, html {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1000; /* Ensure it covers the entire page */
+    z-index: 1000; 
 }
 
 #loading-screen img {
