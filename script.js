@@ -6,6 +6,7 @@ window.addEventListener("load", () => {
   }, 4000); // Adjust the delay as needed
 
   const { animate, scroll, inView } = Motion;
+  
   inView("#top-svg", (progress) => {
     animate(
       "#top-path",
