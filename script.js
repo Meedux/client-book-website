@@ -2,7 +2,7 @@ window.addEventListener("load", () => {
   setTimeout(() => {
     document.getElementById("loading-screen").style.display = "none";
     document.getElementById("main-content").style.display = "block";
-    document.body.style.overflow = "auto"; // Make the body scrollable again
+    // document.body.style.overflow = "auto"; // Make the body scrollable again
   }, 4000); // Adjust the delay as needed
 });
 
@@ -12,6 +12,8 @@ gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 // Get the SVG path element
 const svgPath = document.querySelector("#svgPath");
 const svg = document.querySelector("#scrollingSvg");
+
+const orgSvg = document.querySelector("#top-img");
 
 // Set up the path animation (stroke-dashoffset)
 const pathLength = svgPath.getTotalLength();

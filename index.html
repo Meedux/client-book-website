@@ -1,70 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Loading Screen -->
     <div id="loading-screen">
-        <img src="img/loading1.svg" alt="loading1">
-        <img src="img/loading2.svg" alt="loading2">
-        <img src="img/loading3.svg" alt="loading3">
-        <img src="img/loading4.svg" alt="loading4">
-        <img src="img/loading5.svg" alt="loading5">
-        <img src="img/loading6.svg" alt="loading6">
+      <img src="img/loading1.svg" alt="loading1" />
+      <img src="img/loading2.svg" alt="loading2" />
+      <img src="img/loading3.svg" alt="loading3" />
+      <img src="img/loading4.svg" alt="loading4" />
+      <img src="img/loading5.svg" alt="loading5" />
+      <img src="img/loading6.svg" alt="loading6" />
     </div>
 
     <!-- Main Content -->
-    <div id="main-content" style="display: none;">
-        <header class="header">
-            <!-- Navigation Header -->
-            <nav class="navbar">
-                <div class="nav-container">
-                    <div class="navbar-logo">
-                        <a href="#">
-                            <img src="img/nav-logo.png" alt="">
-                        </a>
-                    </div>
-                    <ul class="navbar-links">
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                        <li><a href="#">Link 4</a></li>
-                        <li><a href="#" class="btn">Button</a></li>
-                    </ul>
-                </div>
-            </nav>
-
-            <!-- Hero Section with IMG BG -->
-            <section class="hero">
-                <div class="hero-logo">
-                    <img src="img/hero-logo.svg" alt="Hero Logo">
-                </div>
-            </section>
-        </header>
-
-        <!-- Organization Section -->
-        <section class="organization">
-            <div class="text-container">
-                <h1>想いを共にした
-                    組織は強い。</h1>
+    <div id="main-content" style="display: none">
+      <header class="header">
+        <!-- Navigation Header -->
+        <nav class="navbar">
+          <div class="nav-container">
+            <div class="navbar-logo">
+              <a href="#">
+                <img src="img/nav-logo.png" alt="" />
+              </a>
             </div>
-            <div class="organization-img">
-                <img src="img/top-img.svg" alt="Side Image" width="312" height="467">
-            </div>
+            <ul class="navbar-links">
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+              <li><a href="#">Link 4</a></li>
+              <li><a href="#" class="btn">Button</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Hero Section with IMG BG -->
+        <section class="hero">
+          <div class="hero-logo">
+            <img src="img/hero-logo.svg" alt="Hero Logo" />
+          </div>
         </section>
+      </header>
 
-        <section class="long">
-            <div class="long-container" id="svgContainer">
-                <svg id="scrollingSvg" viewBox="0 0 1440 6714.35" class="svg">
-                    <path id="svgPath" fill="none" stroke-width="4" stroke="red" stroke-linecap="round" stroke-linejoin="round"
-                    d="M883.08,787.01c-577.59,351.63-465.22,511.56-389.9,504.88c32.89-2.92,43.25,3.77,48.4,14.63
+      <!-- Organization Section -->
+      <section class="organization">
+        <div class="text-container">
+          <h1>想いを共にした 組織は強い。</h1>
+        </div>
+        <div class="organization-img">
+          <svg
+            id="top-svg"
+            width="312"
+            height="467"
+            viewBox="0 0 317 470"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="top-path"
+              d="M146.615 260.281C142.465 267.651 139.355 274.141 138.615 278.041C135.925 292.421 145.805 293.771 150.295 289.281C154.785 284.791 148.495 266.811 145.725 257.531C142.995 248.431 129.665 217.671 109.305 213.941C88.945 210.211 76.895 209.341 70.015 201.611C63.135 193.881 50.5351 169.171 33.5951 168.061C24.3451 167.451 16.3151 173.781 21.6551 179.671C27.0051 185.561 38.525 193.601 41.305 199.901C43.765 205.491 37.925 210.201 33.585 199.611C29.835 190.461 27.115 166.091 27.115 166.091C27.115 166.091 25.985 147.691 25.965 143.391C25.915 131.131 27.3351 123.751 22.1251 118.211C17.2651 113.061 9.84504 112.571 6.76504 123.431C2.15504 139.681 0.305044 164.081 3.86504 176.561C7.42504 189.041 32.385 233.021 41.295 244.901"
+              stroke="#BC977D"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              class="top-path"
+              d="M170.094 260.311C174.234 267.681 177.344 274.151 178.074 278.051C180.764 292.431 170.884 293.781 166.384 289.291C161.894 284.801 168.184 266.821 170.954 257.541C173.674 248.441 187.014 217.681 207.374 213.951C227.744 210.221 239.784 209.361 246.664 201.621C253.544 193.891 266.144 169.181 283.084 168.071C292.334 167.461 300.364 173.801 295.024 179.681C289.674 185.571 278.154 193.611 275.374 199.911C272.914 205.501 278.754 210.211 283.094 199.621C286.844 190.471 289.564 166.101 289.564 166.101C289.564 166.101 290.694 147.701 290.714 143.401C290.764 131.141 289.344 123.761 294.554 118.221C299.414 113.071 306.834 112.581 309.914 123.441C314.524 139.691 316.384 164.091 312.814 176.571C309.254 189.051 285.564 234.101 275.374 244.911C266.224 254.631 249.584 257.851 240.454 263.221C231.334 268.591 209.334 291.731 205.924 311.931C200.834 342.101 203.104 353.611 208.504 377.841"
+              stroke="#BC977D"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              class="top-path"
+              d="M231.884 469.791C231.794 469.791 231.704 469.791 231.614 469.771C230.804 469.621 230.254 468.841 230.404 468.031C231.094 464.241 231.454 460.311 231.464 456.361C231.464 455.531 232.134 454.871 232.964 454.871C233.794 454.871 234.464 455.551 234.454 456.381C234.434 460.511 234.064 464.621 233.344 468.581C233.214 469.301 232.584 469.811 231.874 469.811L231.884 469.791ZM232.064 445.891C231.334 445.891 230.694 445.361 230.584 444.611C230.024 440.911 229.184 437.031 228.074 433.071C227.854 432.271 228.314 431.451 229.114 431.221C229.904 431.001 230.734 431.461 230.964 432.261C232.104 436.341 232.974 440.341 233.554 444.161C233.674 444.981 233.114 445.741 232.294 445.871C232.214 445.881 232.144 445.891 232.064 445.891ZM225.754 422.781C225.144 422.781 224.574 422.411 224.354 421.811C223.094 418.461 221.654 414.951 219.824 410.781C219.494 410.021 219.834 409.141 220.594 408.801C221.354 408.471 222.234 408.811 222.574 409.571C224.424 413.791 225.884 417.341 227.164 420.751C227.454 421.521 227.064 422.391 226.284 422.681C226.114 422.751 225.934 422.781 225.754 422.781ZM216.274 400.731C215.704 400.731 215.154 400.401 214.904 399.851C213.254 396.191 211.544 392.311 210.174 388.721C209.884 387.951 210.274 387.081 211.044 386.791C211.824 386.501 212.684 386.891 212.974 387.661C214.304 391.171 215.994 395.011 217.634 398.621C217.974 399.381 217.634 400.261 216.884 400.601C216.684 400.691 216.474 400.731 216.264 400.731H216.274Z"
+              fill="#BC977D"
+            />
+            <path
+              class="top-path"
+              d="M170.095 260.311C166.005 251.751 54.9445 116.201 60.3345 49.5112C61.9445 29.5512 73.1345 11.6712 90.3645 5.20117C125.115 -7.83883 149.635 21.9712 158.615 40.5212M158.615 40.5212C171.895 67.9412 169.795 89.2212 158.615 89.2212C147.435 89.2212 143.465 67.1012 158.615 40.5212ZM158.615 40.5212C168.825 22.6112 192.115 -7.84883 226.865 5.20117C244.095 11.6712 255.275 29.5512 256.895 49.5112C262.285 116.201 150.705 251.731 146.615 260.291"
+              stroke="#BC977D"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </section>
+
+      <section class="long">
+        <div class="long-container" id="svgContainer">
+          <svg id="scrollingSvg" viewBox="0 0 1440 6714.35" class="svg">
+            <path
+              id="svgPath"
+              fill="none"
+              stroke-width="4"
+              stroke="red"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M883.08,787.01c-577.59,351.63-465.22,511.56-389.9,504.88c32.89-2.92,43.25,3.77,48.4,14.63
                     c8.23,17.38,2.46,61.52-3.77,105.42c-5.91,41.64-10.29,41.5,18.92,55.71c32.33,15.73,87.49,33.27,91.67,27.39
                     c3.38-4.76,15.14-32.97,17.92-43.39c2.52-9.44-39.82-31.67-57.23-29.39c-20.94,2.74-31.02,13.46-27.42,15.24
                     c4.92,2.44,21.04-7.96,24.67-14.87c3.44-6.55,14.39,6.33,11.04-32.63c-1.16-13.4-27.99-77.48-30.45-88.56
@@ -140,69 +182,67 @@
                     c0.95,1.55,0.51,3.07,0,3.89c-33.3,53.47-134.31,213.18-134.31,213.18l-40.53,41.16c-57.34,30.66-32.95,41.95-0.53,52.26
                     c27.76,8.83,40.07,16.82,26.47,39.92c-9.75,16.55-22.24,42.16-4.27,56.55c11.55,9.25,28.54,0.46,38.54-5.53
                     c76.67-45.93,180.28-55.12,180.28-55.12l-115.8-103.19l110.56,109.9c-143.11,34.83-169.47,75.72-169.47,75.72
-                    c-112.65,22.99-160.84,89.35-160.84,89.35l-150-231.57c105.94-85.47,173.23-66.55,173.23-66.55c33-40.16,79.34-41.27,79.34-41.27"/>
-                </svg>
-            </div>
-            <div class="long-text-container">
-                <div class="text-content">
-                    <p>日々の仕事、それぞれの業務、
-                        様々なお客様へのアクション</p>
-                    <p>「うちの社員は普段、
-                        どんなモチベーションで
-                        働いているのだろう？」</p>
-                    <p>そんな疑問やお悩みを抱える
-                        経営者さんはきっと多いはず。</p>
-                </div>
-                <div class="text-content">
-                    <p>私たちが提供するのは、1冊の本。</p>
-                </div>
-                <div class="text-content">
-                    <p>社員さんの「想い」を
-                        主人公にした本を作成します。</p>
-                </div>
-                <div class="text-content">
-                    <p>制作の工程で、
+                    c-112.65,22.99-160.84,89.35-160.84,89.35l-150-231.57c105.94-85.47,173.23-66.55,173.23-66.55c33-40.16,79.34-41.27,79.34-41.27"
+            />
+          </svg>
+        </div>
+        <div class="long-text-container">
+          <div class="text-content">
+            <p>日々の仕事、それぞれの業務、 様々なお客様へのアクション</p>
+            <p>
+              「うちの社員は普段、 どんなモチベーションで 働いているのだろう？」
+            </p>
+            <p>そんな疑問やお悩みを抱える 経営者さんはきっと多いはず。</p>
+          </div>
+          <div class="text-content">
+            <p>私たちが提供するのは、1冊の本。</p>
+          </div>
+          <div class="text-content">
+            <p>社員さんの「想い」を 主人公にした本を作成します。</p>
+          </div>
+          <div class="text-content">
+            <p>
+              制作の工程で、
+              お客様への想い、 仲間への想い、 仕事への想い、 そして社員さんご自身の想い、
+            </p>
+            <p>心の奥底にある気持ちに光を当てます</p>
+          </div>
+          <div class="text-content">
+            <p>
+              社員さんご自身も意識していなかった 仕事へのやりがいに気づいたり、
+              思いがけない個性を発見したり、  関わりがないと思い込んでいた
+              人やコトに共通点があったり、 果ては会社が提供するサービスの
+              本質に出会ったり…… 
+            </p>
+          </div>
+          <div class="text-content">
+            <p>
+              日常の業務で見えづらくなっていた 社員さんが目指すもの、 会社の目指すべき道が拓けていきます。
+            </p>
+          </div>
+          <div class="text-content">
+            <h1>さあ、組織と個人が 織りなす物語を 紡ぎましょう。</h1>
+          </div>
+        </div>
+      </section>
 
-                        お客様への想い、 仲間への想い、 仕事への想い、 そして社員さんご自身の想い、</p>
-                    <p>心の奥底にある気持ちに光を当てます</p>
-                </div>
-                <div class="text-content">
-                    <p>社員さんご自身も意識していなかった
-                        仕事へのやりがいに気づいたり、
-                        思いがけない個性を発見したり、 
-                        関わりがないと思い込んでいた
-                        人やコトに共通点があったり、
-                        果ては会社が提供するサービスの
-                        本質に出会ったり…… </p>
-                </div>
-                <div class="text-content">
-                    <p>日常の業務で見えづらくなっていた 社員さんが目指すもの、 会社の目指すべき道が拓けていきます。</p>
-                </div>
-                <div class="text-content">
-                    <h1>さあ、組織と個人が
-                        織りなす物語を
-                        紡ぎましょう。</h1>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Personal Brand Book Section -->
+      <!-- Personal Brand Book Section -->
 
-        <!-- Voice Section -->
+      <!-- Voice Section -->
 
-        <!-- Service Section -->
+      <!-- Service Section -->
 
-        <!-- HR? Section? -->
+      <!-- HR? Section? -->
 
-        <!-- QnA Section -->
+      <!-- QnA Section -->
 
-        <!-- Company Section -->
+      <!-- Company Section -->
 
-        <!-- Contacts Section -->
+      <!-- Contacts Section -->
 
-        <!-- Footer Section -->
+      <!-- Footer Section -->
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
