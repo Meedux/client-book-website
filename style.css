@@ -153,6 +153,10 @@ body, html {
     max-width: 504px;
 }
 
+#scrollingSvg {
+    position: relative; /* Ensure the container is part of the scrollable flow */
+}
+
 .long-container img {
     width: 100%; /* Ensure the image takes full width of its container */
     height: auto; /* Maintain aspect ratio */
@@ -262,3 +266,11 @@ body, html {
     animation: sequentialFade 6s infinite;
     animation-delay: 2.5s;
 }
+
+/* #longSvg {
+    width: 100%;
+    height: auto;
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 0.1s ease-out;
+} */
