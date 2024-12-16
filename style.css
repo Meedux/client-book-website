@@ -276,6 +276,7 @@ body, html {
 
 section.stacked-images-section {
     display: flex;
+    width: 100vw;
     flex-direction: column;
     gap: 2rem;
     padding: 2rem;
@@ -289,6 +290,8 @@ section.stacked-images-section {
     justify-content: center;
     gap: 10rem;
     margin-bottom: 30rem;
+    height: 100vh;
+    width: 100vw;
   }
 
   .image-container-stacked {
@@ -324,42 +327,81 @@ section.stacked-images-section {
 
   .subsection-stacked:nth-child(1) .bg-image-stacked {
     transform: rotate(-7deg);
+    transition: opacity 0.5s ease-in-out;
   }
 
   .subsection-stacked:nth-child(1) .main-image-stacked {
     transform: rotate(3deg);
+    transition: opacity 0.5s ease-in-out;
   }
 
   .subsection-stacked:nth-child(2) .bg-image-stacked {
     transform: rotate(7deg);
+    transition: opacity 0.5s ease-in-out;
   }
 
   .subsection-stacked:nth-child(2) .main-image-stacked {
     transform: rotate(-2deg);
+    transition: opacity 0.5s ease-in-out;
   }
 
   .subsection-stacked:nth-child(3) .bg-image-stacked {
     transform: rotate(-9deg);
+    transition: opacity 0.5s ease-in-out;
   }
 
   .subsection-stacked:nth-child(3) .main-image-stacked {
     transform: rotate(2deg);
+    transition: opacity 0.5s ease-in-out;
   }
 
   .subsection-stacked:nth-child(4) .bg-image-stacked {
     transform: rotate(-6deg);
+    transition: opacity 0.5s ease-in-out;
   }
 
   .subsection-stacked:nth-child(4) .main-image-stacked {
     transform: rotate(4deg);
+    transition: opacity 0.5s ease-in-out;
   }
 
   .subsection-stacked:nth-child(5) .bg-image-stacked {
     transform: rotate(-4deg);
+    transition: opacity 0.5s ease-in-out;
   }
 
   .subsection-stacked:nth-child(5) .main-image-stacked {
     transform: rotate(1deg);
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .sticky {
+    height: 80vh;
+    width: 100vw;
+    /* position: sticky;  */
+    /* top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); */
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .stick {
+    height: 80vh;
+    width: 100vw;
+    position: sticky; 
+    /* top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); */
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .fixed{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 35%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
   }
 
   /* Responsive Design */
